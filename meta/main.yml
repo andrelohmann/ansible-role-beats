@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: andrelohmann
+  role_name: beats
+  description: ansible galaxy role to deploy elasticstack beats to your node
+  company: smartformer UG
+
+  license: MIT
+
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+      - xenial
+      - bionic
+
+  galaxy_tags:
+  - elasticstack
+  - beats
+
+dependencies: []
+...
