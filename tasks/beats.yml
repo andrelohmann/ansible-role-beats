@@ -45,7 +45,7 @@
     when: elasticsearch_listen_ip is defined
 
   - name: restart auditbeat
-    service:
+    systemd:
       name: auditbeat
       enabled: yes
       state: restarted
@@ -97,7 +97,7 @@
     when: elasticsearch_listen_ip is defined
 
   - name: restart filebeat
-    service:
+    systemd:
       name: filebeat
       enabled: yes
       state: restarted
@@ -149,7 +149,7 @@
     when: elasticsearch_listen_ip is defined
 
   - name: restart heartbeat
-    service:
+    systemd:
       name: heartbeat-elastic
       enabled: yes
       state: restarted
@@ -201,7 +201,7 @@
     when: elasticsearch_listen_ip is defined
 
   - name: restart metricbeat
-    service:
+    systemd:
       name: metricbeat
       enabled: yes
       state: restarted
@@ -253,7 +253,7 @@
     when: elasticsearch_listen_ip is defined
 
   - name: restart packetbeat
-    service:
+    systemd:
       name: packetbeat
       enabled: yes
       state: restarted
