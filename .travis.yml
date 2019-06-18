@@ -1,19 +1,19 @@
 ---
 language: python
-python: "2.7"
+python: "3.6"
 
 sudo: required
-dist: trusty
+dist: xenial
 
 # Install ansible
 addons:
   apt:
     packages:
-    - python-pip
+    - python3-pip
 
 install:
   # Install ansible
-  - pip install ansible
+  - pip3 install ansible
 
   # Check ansible version
   - ansible --version
@@ -27,3 +27,5 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+
+...

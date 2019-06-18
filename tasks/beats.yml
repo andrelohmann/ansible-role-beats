@@ -50,7 +50,7 @@
       enabled: yes
       state: restarted
 
-  when: elasticsearch_install_auditbeat
+  when: elasticsearch_install_auditbeat|bool
 
 - block:
 
@@ -102,7 +102,7 @@
       enabled: yes
       state: restarted
 
-  when: elasticsearch_install_filebeat
+  when: elasticsearch_install_filebeat|bool
 
 - block:
 
@@ -154,7 +154,7 @@
       enabled: yes
       state: restarted
 
-  when: elasticsearch_install_heartbeat
+  when: elasticsearch_install_heartbeat|bool
 
 - block:
 
@@ -206,7 +206,7 @@
       enabled: yes
       state: restarted
 
-  when: elasticsearch_install_metricbeat
+  when: elasticsearch_install_metricbeat|bool
 
 - block:
 
@@ -258,6 +258,6 @@
       enabled: yes
       state: restarted
 
-  when: elasticsearch_install_packetbeat
+  when: elasticsearch_install_packetbeat|bool
 
 ...

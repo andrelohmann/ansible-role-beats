@@ -1,5 +1,5 @@
 beats
-============
+=====
 
 [![Build Status](https://travis-ci.org/andrelohmann/ansible-role-beats.svg?branch=master)](https://travis-ci.org/andrelohmann/ansible-role-beats)
 
@@ -13,7 +13,7 @@ Role Variables
 --------------
 
     elasticsearch_listen_ip: "localhost" # ip address to which beats should connect to
-    elasticsearch_release: 6.4.2
+    elasticsearch_release: 7.1.1
 
     elasticsearch_install_auditbeat: True
     elasticsearch_install_filebeat: True
